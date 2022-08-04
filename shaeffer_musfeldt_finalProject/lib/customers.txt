@@ -1,0 +1,3 @@
+username="Guest",password="password",accounts={12345}
+username="Adam",password="pbandj",accounts={47599,60331}
+username="Billy",password="420blazeit",accounts={}
