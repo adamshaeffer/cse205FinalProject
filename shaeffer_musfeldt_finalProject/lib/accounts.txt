@@ -1,3 +1,8 @@
 num=10000,type="Savings",balance=1000.00
-num=10001,type="Savings",balance=100000000.00
-num=10002,type="Checking",balance=2000.00
+num=10001,type="Savings",balance=100010000.00
+num=10002,type="Checking",balance=7000.00
+num=78900,type="Checking",balance=0.00
+num=49310,type="Savings",balance=300.00
+num=73854,type="Savings",balance=900.00
+num=21985,type="Checking",balance=300.00
+num=36485,type="Checking",balance=200.00

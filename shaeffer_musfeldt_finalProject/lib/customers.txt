@@ -1,3 +1,5 @@
 username="Guest",password="password",accounts={10000}
-username="Adam",password="pbandj",accounts={10001,10002}
-username="Billy",password="420blazeit",accounts={}
+username="Adam",password="vanilla",accounts={10001,10002,49310}
+username="Caleb",password="whey",accounts={78900}
+username="Billy",password="caramel",accounts={73854,21985}
+username="Jason",password="berry",accounts={36485}
