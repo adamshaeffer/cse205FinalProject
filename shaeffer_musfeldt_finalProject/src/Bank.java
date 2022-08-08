@@ -38,7 +38,7 @@ class Bank {
         ArrayList<Integer> accountNums = new ArrayList<Integer>();
         
         print("");
-        print("Welcome to the BANK OF COMPUTER SCIENCE");
+        print("Welcome to the VELLS PARGO BANK");
         
         while(!login) {
            
@@ -303,7 +303,7 @@ class Bank {
         closeApplication();
     }
 
-    public static void openApplication() throws IOException {
+    public static void openApplication() throws IOException { // Method to read all previously saved data from the .txt files
         FileInputStream cstmr = new FileInputStream("lib/customers.txt");
         FileInputStream acct = new FileInputStream("lib/accounts.txt");
         Scanner scnr = new Scanner(cstmr);
@@ -322,7 +322,7 @@ class Bank {
         scnr.close();
     }
 
-    public static void closeApplication() throws IOException {
+    public static void closeApplication() throws IOException { // Method to save all changes to the .txt files to preserve data from the program.
         FileOutputStream cstmr = new FileOutputStream("lib/customers.txt");
         FileOutputStream acct = new FileOutputStream("lib/accounts.txt");
         PrintWriter writer = new PrintWriter(cstmr);
@@ -339,7 +339,7 @@ class Bank {
         writer.close();
     }
 
-    public static void displayAccounts() {
+    public static void displayAccounts() { // Method to print out the accounts and all relating information.
         for(int i=0; i<cust.getAccounts().length; i++) {
             String toPrint = "   " + (i+1) + ". ";
             Account acct = cust.getAccounts()[i];
@@ -371,7 +371,8 @@ class Bank {
         }
     }
 
-    public static boolean updateArrays() {
+    public static boolean updateArrays() { // Method that changes the ArrayLists customers and accounts so that 
+        // account and customer information is updated before being written to the .txt files
         
         String acctNums = "{";
         Account[] accts = cust.getAccounts();
@@ -389,22 +390,23 @@ class Bank {
         return false;
     }
 
-    public static void print(String toPrint) {
+    public static void print(String toPrint) { // Method to make printing to the terminal easier.
         System.out.println(toPrint);
     }
 
-    public static String ask(String toAsk) {
+    public static String ask(String toAsk) { // Method to make user input easier and more efficient.
         Scanner scnr = new Scanner(System.in); // Ignore the warning on scnr
         System.out.print(toAsk);
         String answer = scnr.nextLine();
         return answer;
     }
 
-    public static void line() {
+    public static void line() { // Prints a dividing line
         System.out.println("-----------------------");
     }
 
-    public static boolean checkUsername (String user) {
+    public static boolean checkUsername (String user) { // Method to check all other registered usernames and ensure that the new username doesn't already exist.
+        // Returns true if the username is not already taken.
         for(int i=0; i<customers.size(); i++) {
             if(customers.get(i).contains(user)) {
                 return false;
