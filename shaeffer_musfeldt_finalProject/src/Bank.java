@@ -5,6 +5,13 @@ import java.io.PrintWriter;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
+// Main file for the Final Project of CSE 205, summer 2022.
+// Group participants are: Adam Shaeffer and Caleb Musfeldt.
+
+// This program requires two text files, one called "customers.txt" and the other "accounts.txt" to save
+//  the data from previous tests and runs of the program.
+// The program also runs on the two classes Customer and Account for functionality of the Bank simulation.
+
 class Bank {
 
     public static ArrayList<String> customers;
